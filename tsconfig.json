@@ -1,14 +1,38 @@
 {
+  "ts-node": {
+    // these options are overrides used only by ts-node
+    "compilerOptions": {
+      "module": "es2022"
+    }
+  },
+  "compilerOptions": {
+    //"module": "commonjs",
+    "module": "es2022",
+    //"module": "esnext",
+    "moduleResolution":"node",
+    "esModuleInterop": true,
+    "target": "es2020",
+    "noImplicitAny": false,
+    "rootDir": "src/",
+    "outDir": "./build",
+    "strict": true
+  },
+  /*
     "compilerOptions": {
       "target": "es2020",
-      "module": "es2022",
-      // "module": "commonjs",
+      "module": "CommonJS",
+      "moduleResolution":"node",
       "allowJs": true,
       "strict": true,
       "noImplicitAny": false,
       "esModuleInterop": true,
       "resolveJsonModule": true,
       "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true
-    }
+      "forceConsistentCasingInFileNames": true,
+      "outDir": "./build",
+      "rootDir": "src",
+    },*/
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
   }
+  // --watch src -e ts,tsx --exec ts-node

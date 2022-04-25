@@ -5,19 +5,19 @@ https://dev.to/ebrahimmfadae/develop-an-openid-server-with-nodejs-typescript-9n1
 
 ## Config npm
 
-```
+```bash
 $ npm init -y
 ```
 
 ## Config Typescript
 
-```
+```bash
 $ npm add typescript ts-node
 $ npm add @types/node -D
 ```
 
 Create a tsconfig.json file with this content.
-```
+```js
 {
   "compilerOptions": {
     "target": "es2020",
@@ -36,7 +36,7 @@ Create a tsconfig.json file with this content.
 ## Add npm scripts
 
 We can run scripts with npm run or yarn run command.
-```
+```json
 {
   "start": "ts-node src"
 }
@@ -51,27 +51,28 @@ These are also included in the tutorial repository.
 
 Don't worry about configuring dotenv. Just go with the tutorial and everything will fit in place.  
 
-```
+```bash
 $ npm add dotenv
 ```
 
 
 Create a .env file with this content.
-```
+```bash
 PORT=3000
 ```
 
 ## Add Server dependencies
 
-```
+```bash
 $ npm add koa
 $ npm add @types/koa -D
 $ npm add @koa/cors
+$ npm i --save-dev @types/koa__cors
 ```
 
 ## Add OpenId Connect dependencies
 
-```
+```bash
 $ npm add openid-client koa-passport koa-session
 $ npm add @types/koa-passport -D
 ```
