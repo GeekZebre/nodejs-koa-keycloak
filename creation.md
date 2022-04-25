@@ -75,7 +75,11 @@ $ npm add @koa/cors
 $ npm add openid-client koa-passport koa-session
 $ npm add @types/koa-passport -D
 ```
+## Article suivi
 
+https://medium.com/keycloak/keycloak-express-openid-client-fabea857f11f  
+https://medium.com/@prashantramnyc/node-js-with-passport-authentication-simplified-76ca65ee91e5  
+https://github.com/austincunningham/keycloak-express-openid-client  
 
 
 
