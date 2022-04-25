@@ -1,0 +1,37 @@
+{
+  "name": "nodejs-koa-keycloak",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeekZebre/nodejs-koa-keycloak.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeekZebre/nodejs-koa-keycloak/issues"
+  },
+  "homepage": "https://github.com/GeekZebre/nodejs-koa-keycloak#readme",
+  "dependencies": {
+    "@koa/cors": "^3.3.0",
+    "dotenv": "^16.0.0",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-passport": "^4.1.4",
+    "koa-session": "^6.2.0",
+    "openid-client": "^5.1.5",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-passport": "^4.0.3",
+    "@types/node": "^17.0.26"
+  }
+}
